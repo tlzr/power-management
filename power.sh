@@ -8,9 +8,9 @@ hibernate_bin="/usr/sbin/pm-hibernate"
 
 if [ -f $PWRCPT ];
 then
-    PWRCPT=$(< /sys/class/power_supply/BAT0/capacity)
+    PWRVAL=$(< /sys/class/power_supply/BAT0/capacity)
 
-    if [ ! -z $PWRCPT ] && [ $PWRCPT -le "40" ];
+    if [ ! -z $PWRVAL ] && [ $PWRVAL -le "40" ];
     then
         $sudo_bin $hibernate_bin
     fi
