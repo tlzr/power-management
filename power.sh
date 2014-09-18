@@ -2,6 +2,8 @@
 
 #*/5 * * * * /home/ai/scripts/power-reaction/power.sh
 
+#test
+
 PWRCPT="/sys/class/power_supply/BAT0/capacity"
 sudo_bin="/usr/bin/sudo"
 hibernate_bin="/usr/sbin/pm-hibernate"
